@@ -1,1 +1,1 @@
-# rsschool-cv
+https://bolzand.github.io/rsschool-cv/cv
