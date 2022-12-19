@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#contacts">Contacts</a></li>
+                <li class="nav-item"><a href="#about">About</a></li>
+                <li class="nav-item"><a href="#skills">Skills</a></li>
+                <li class="nav-item"><a href="#education">Education</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Dmitry Bolzan</h1>
+        <img src="./assets/photo.jpg" alt="cv photo" width="300" height="338">
+        <h2>Contacts:</h2>
+        <ul class="contacts" id="contacts">
+        <li><a href="https://t.me/bolzand">Telegram</a></li>
+        <li>dmitry.bolzan@gmail.com</li>
+        <li>discord - Kraft#9761</li>
+        </ul>
+        <h2 id="about">About myself</h2>
+        <span>I like web development and I want to improve my programming skills and become a professional. I am an enthusiastic, responsible and hard working person. I am able to work well under pressure and adhere to strict deadlines.
+        </span>
+        <h2 id="skills">Skills</h2>
+        <span>Have a good knowledge of HTML, CSS, Git.</span>
+        <h2>Code examples</h2>
+        <span>
+            <pre>module.exports = function check(str, bracketsConfig) {
+            const config = {};
+            for (let i = 0; i < bracketsConfig.length; i++){
+              let element = bracketsConfig[i];
+              config[element[1]] = element[0];
+            }
+          
+            let stack = [];
+            for (let i = 0; i< str.length; i++){
+              let symbol = str[i];
+              if (stack.length && config[symbol] == stack[stack.length - 1]){
+                stack.pop();
+              } else {
+                stack.push(symbol);
+              }
+            }
+    
+            return stack.length == 0;
+          }</pre>
+          <a href="https://github.com/bolzand/brackets">Task example</a>
+        </span>
+        <h2>Work experience</h2>
+        <span>Now I am working in National Art Museum of the Republic of Belarus as a system administrator of the department of automated control systems.
+        </span>
+        <h2 id="education">Education</h2>
+        <span>Belarusian State University of Informatics and Radioelectronics with a degree in infocommunications engineer. In university I had experience with following technologies: HTML, CSS, JavaScript, C, C++, SQL, Java.
+        </span>
+        <h2>Language</h2>
+        <span>English level is A2.</span>
+    </main>
+    <footer class="footer">
+        <a href="https://github.com/bolzand">Github</a>
+        <span>2022</span>
+        <a href="https://rs.school/js/">
+            <img class="rsicon" src="assets/rs_school_js.svg" alt="rs school icon">
+        </a>
+    </footer>
+</body>
+</html>
